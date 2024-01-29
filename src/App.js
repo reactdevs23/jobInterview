@@ -1,7 +1,5 @@
 import MainComponent from "./components/MaiComponent/MainComponent";
 import { img1 } from "./images";
-import DosIcon from "./images/DosIcon";
-import DontsIcon from "./images/DontsIcon";
 
 function App() {
   const data = {
@@ -14,7 +12,6 @@ function App() {
     tagline: "Pay Close Attention to these and you won't fail.",
     bottomTitle: "Good Luck!",
     dosData: {
-      icon: <DosIcon color="#fff" />,
       data: [
         { img: img1, info: "Research <br/> about the <br/> company" },
         { img: img1, info: "Dress <br/> properly  and <br/> accordingly" },
@@ -26,7 +23,6 @@ function App() {
       ],
     },
     dontData: {
-      icon: <DontsIcon color="#fff" />,
       data: [
         { img: img1, info: "Make <br/> negative <br/> comments" },
         { img: img1, info: "Treat the <br/> interview<br/> casually" },

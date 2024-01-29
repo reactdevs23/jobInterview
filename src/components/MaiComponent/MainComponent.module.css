@@ -45,8 +45,17 @@
   padding: 50px 30px;
 }
 .icon {
-  max-width: 100px;
-  padding-bottom: 30px;
+  font-size: 70px;
+
+  color: var(--secondaryColor);
+  width: 100px;
+  height: 100px;
+  border: 6px solid var(--secondaryColor);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
 }
 .box {
   display: flex;
