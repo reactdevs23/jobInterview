@@ -1,5 +1,6 @@
 .mainWrapper {
   min-height: 100vh;
+  background: var(--bodyBg);
 }
 .wrapper {
   max-width: 1100px;
@@ -13,13 +14,13 @@
 .title {
   font-size: 70px;
   text-align: center;
-  color: var(--primaryColor);
+  color: var(--headingColor);
   line-height: 110%;
 }
 .tagline {
   font-size: 40px;
   text-align: center;
-  color: var(--primaryColor);
+  color: var(--headingColor);
   padding-bottom: 30px;
 }
 .title,
@@ -41,16 +42,16 @@
   justify-content: center;
   align-items: center;
   gap: 30px;
-  background: var(--backgroundColor);
+  background: var(--contentBg);
   padding: 50px 30px;
 }
 .icon {
   font-size: 70px;
 
-  color: var(--secondaryColor);
+  color: var(--iconColor);
   width: 100px;
   height: 100px;
-  border: 6px solid var(--secondaryColor);
+  border: 6px solid var(--iconColor);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -68,7 +69,7 @@
   max-width: 270px;
 }
 .info {
-  color: var(--secondaryColor);
+  color: var(--textColor);
   font-size: 26px;
   text-align: center;
 }

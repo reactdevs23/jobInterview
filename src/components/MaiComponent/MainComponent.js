@@ -7,6 +7,8 @@ const MainComponent = ({
 
   dosData,
   dontData,
+  dosIcon,
+  dontIcon,
   bottomTitle,
   headerFontFamily,
 }) => {
@@ -22,9 +24,7 @@ const MainComponent = ({
 
         <div className={styles.dosAndDonts}>
           <div className={styles.dos}>
-            <div className={styles.icon}>
-              <i className="fa-solid fa-check"></i>
-            </div>
+            <div className={styles.icon}>{dosIcon}</div>
             {dosData.data.map((el, i) => (
               <div className={styles.box} key={i}>
                 <img src={el.img} alt="#" className={styles.img} />
@@ -36,9 +36,8 @@ const MainComponent = ({
             ))}
           </div>
           <div className={styles.donts}>
-            <div className={styles.icon}>
-              <i className="fa-solid fa-xmark"></i>
-            </div>
+            <div className={styles.icon}>{dontIcon}</div>
+
             {dontData.data.map((el, i) => (
               <div className={styles.box} key={i}>
                 <img src={el.img} alt="#" className={styles.img} />

@@ -5,12 +5,16 @@ function App() {
   const data = {
     fontFamily: "'Space Mono', monospace",
     headerFontFamily: "'Archivo Black', sans-serif",
-    primaryColor: "#000",
-    secondaryColor: "#fff",
-    background: "#2B70E4",
+    bodyBg: "#fff",
+    headingColor: "#000",
+    textColor: "#fff",
+    contentBg: "#2B70E4",
     title: "Dos and Don'ts for A Succesfull Job Interview",
     tagline: "Pay Close Attention to these and you won't fail.",
     bottomTitle: "Good Luck!",
+    dosIcon: <i className="fa-solid fa-check"></i>,
+    dontIcon: <i className="fa-solid fa-xmark"></i>,
+    iconColor: "#fff",
     dosData: {
       data: [
         { img: img1, info: "Research <br/> about the <br/> company" },
@@ -40,9 +44,11 @@ function App() {
   return (
     <div
       style={{
-        "--primaryColor": data.primaryColor,
-        "--secondaryColor": data.secondaryColor,
-        "--backgroundColor": data.background,
+        "--bodyBg": data.bodyBg,
+        "--headingColor": data.headingColor,
+        "--textColor": data.textColor,
+        "--contentBg": data.contentBg,
+        "--iconColor": data.iconColor,
         fontFamily: data.fontFamily,
       }}
     >
